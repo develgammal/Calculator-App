@@ -2,50 +2,77 @@
 <html lang="en">
 
 <head>
+  <!-- Page Title -->
   <title>Calculator</title>
+
+  <!-- Link to the external CSS file for styling -->
   <link rel="stylesheet" href="./calculator.css">
+
+  <!-- Meta tags for character encoding, viewport settings, and browser compatibility -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="calculator.css">
 </head>
 
 <body>
+  <!-- Main calculator container -->
   <div class="calc">
+
+    <!-- Display screen for the calculator, initially showing 0 with a flashing animation -->
     <section class="screen flashing-zero">
       0
     </section>
 
+    <!-- Section containing all calculator buttons -->
     <section class="calc-buttons">
+
+      <!-- Row 1: Clear, Backspace, and Divide buttons -->
       <div class="calc-button-row">
-        <button class="calc-button double ">C</button>
+        <!-- Clear button, spans two button widths -->
+        <button class="calc-button double">C</button>
+        <!-- Backspace button -->
         <button class="calc-button">&larr;</button>
+        <!-- Divide button -->
         <button class="calc-button">&divide;</button>
       </div>
+
+      <!-- Row 2: Number 7, 8, 9, and Multiply buttons -->
       <div class="calc-button-row">
         <button class="calc-button">7</button>
         <button class="calc-button">8</button>
         <button class="calc-button">9</button>
         <button class="calc-button">&times;</button>
       </div>
+
+      <!-- Row 3: Number 4, 5, 6, and Subtract buttons -->
       <div class="calc-button-row">
         <button class="calc-button">4</button>
         <button class="calc-button">5</button>
         <button class="calc-button">6</button>
         <button class="calc-button">&minus;</button>
       </div>
+
+      <!-- Row 4: Number 1, 2, 3, and Add buttons -->
       <div class="calc-button-row">
         <button class="calc-button">1</button>
         <button class="calc-button">2</button>
         <button class="calc-button">3</button>
         <button class="calc-button">&plus;</button>
       </div>
+
+      <!-- Row 5: Number 0 (triple width) and Equals button -->
       <div class="calc-button-row">
+        <!-- 0 button, spans three button widths -->
         <button class="calc-button triple">0</button>
+        <!-- Equals button -->
         <button class="calc-button">&equals;</button>
       </div>
-    </section>
-  </div>
+
+    </section> <!-- End of calc-buttons section -->
+
+  </div> <!-- End of calc container -->
+
+  <!-- Link to the external JavaScript file for calculator functionality -->
   <script src="./calculator.js"></script>
 </body>
 

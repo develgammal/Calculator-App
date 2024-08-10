@@ -1,3 +1,4 @@
+/* Center the calculator in the middle of the viewport with a gradient background */
 body {
   display: flex;
   justify-content: center;
@@ -10,6 +11,7 @@ body {
   background-size: cover;
 }
 
+/* Style the calculator container with a black background and gray borders */
 .calc {
   width: 400px;
   height: 594px;
@@ -22,6 +24,7 @@ body {
   border-radius: 10px;
 }
 
+/* Style the calculator display with white text, monospace font, and right alignment */
 .screen {
   color: white;
   font-size: 40px;
@@ -30,16 +33,19 @@ body {
   padding: 20px 5px;
 }
 
+/* Add a blinking animation to the flashing-zero class */
 .flashing-zero {
   animation: blinker 1s linear infinite;
 }
 
+/* Define the blinking effect with 50% opacity at the midpoint of the animation */
 @keyframes blinker {
   50% {
     opacity: 0;
   }
 }
 
+/* Style individual calculator buttons with a light gray background and black text */
 .calc-button {
   background-color: #d8d9db;
   color: black;
@@ -51,27 +57,33 @@ body {
   cursor: pointer;
 }
 
+/* Change button background color on hover */
 .calc-button:hover {
   background-color: #ebebeb;
 }
 
+/* Darken button background color when active (clicked) */
 .calc-button:active {
   background-color: #bbbcbe;
 }
 
+/* Style the double-width buttons (like "0" button) */
 .double {
   width: 49.7%;
 }
 
+/* Style the triple-width buttons if any */
 .triple {
   width: 74.8%;
 }
 
+/* Style the last button in each row with a distinct color for special operations (like "=") */
 .calc-button:last-child {
   background-color: #df974c;
   color: white;
 }
 
+/* Modify the hover and active states for the last button */
 .calc-button:last-child:hover {
   background-color: #dfb07e;
 }
@@ -80,6 +92,7 @@ body {
   background-color: #dd8d37;
 }
 
+/* Set up the button rows with flexbox for even spacing and alignment */
 .calc-button-row {
   display: flex;
   align-content: stretch;
@@ -87,6 +100,7 @@ body {
   margin-bottom: 0.5%;
 }
 
+/* Remove padding from the last button row for a clean bottom edge */
 .calc-button-row:last-child {
   padding-bottom: 0;
 }
